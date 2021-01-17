@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/bundle.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!--endbuild-->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="header">
+
+		<div class="menu d-flex justify-content-between align-items-end">
+			<ul class="menu__menu d-flex justify-content-start">
+				<li class="menu__item">
+					<a href="home.html" class="menu__link active">Home</a>
+				</li>
+				<li class="menu__item">
+					<a href="products.html" class="menu__link">Products</a>
+				</li>
+				<li class="menu__item">
+					<a href="FAQs.html" class="menu__link">FAQs</a>
+				</li>
+				<li class="menu__item">
+					<a href="contact.html" class="menu__link">Contact Us</a>
+				</li>
+			</ul>
+			<a href="#" class="menu__link logo d-flex align-items-end">cbd</a>
+			<ul class="d-flex justify-content-end">
+				<li class="menu__items">
+					<a href="#" class="menu__link">login</a>
+				</li>
+				<li class="menu__items">
+					<a href="#" class="menu__link d-flex align-items-center">
+						<ion-icon name="search-outline"></ion-icon>Search
+					</a>
+				</li>
+				<li class="menu__items">
+					<a href="#" class="menu__link">Cart (0)</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="container">
+			<div class="text-right">
+				<h1 class="header__title">Enhancing Life<br> Excelling in Care</h1>
+				<p class="header__info"> Choose Wisely. Choose CBD.</p>
+				<button class="btn">Start Shopping</button><br>
+				<div class="header__arrow"> See all products <a class="icon-arrow"></a></div>
+			</div>
+			<p class="text-center">
+				<a href="#about" class="icon-down"></a>
+			</p>
+		</div>
+	</header>
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="position-relative text-center">
+				<p class="about__title">We are what we are</p>
+				<img src="images/frame.png" alt="" class="about__frame">
+				<img src="images/logos.png" alt="" class="about__logo">
+			</div>
+			<div class="row">
+				<aside class="sidebar" data-aos="fade-top">
+					<div class="sidebar__block">
+						<ul class="nav nav-tabs sidebar__tabs" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="latest-tab" data-toggle="tab" href="#latest" role="tab"
+									aria-controls="latest" aria-selected="true">what is cbd?</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="popular-tab" data-toggle="tab" href="#popular" role="tab"
+									aria-controls="popular" aria-selected="false">benefits</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab"
+									aria-controls="comments" aria-selected="false">our difference</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="latest" role="tabpanel"
+								aria-labelledby="latest-tab">
+								<div class="row">
+									<div class="col-12 col-md-5">
+										<h3 class="sidebar__title">what it is and how it works</h3>
+										<p class="sidebar__info">CBD is short for cannabidiol. It is a phytocannabinoid
+											found in hemp and known for supporting the body and mind in many ways.*
+											Charlotte’s Web products have cannabinoids with CBD extract.
+										</p><br>
+										<p class="sidebar__info">
+											Not to be confused with oil from hemp seeds (which doesn’t contain
+											cannabinoids), CBD comes from the flowers and leaves of the hemp plant.
+										</p><br>
+										<p class="sidebar__info">
+											Why does CBD work? The human body has a vast network of receptors, the
+											endocannabinoid system.</p>
+									</div>
+									<div class="col-12 offset-md-1 col-md-6">
+										<img src="images/about-1.jpg" alt="" class="sidebar__img">
+										<img src="images/about-2.jpg" alt="" class="sidebar__img">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+								Hello dear USER!!!
+							</div>
+							<div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+								To be continue...
+							</div>
+
+						</div>
+					</div>
+				</aside>
+
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+	<!--build:js js/main.min.js -->
+	<script src="js/bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
+</body>
+
+</html>
