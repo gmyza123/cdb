@@ -1,0 +1,63 @@
+.sidebar{
+    margin-top: 120px;
+
+    &__block{
+        margin-bottom: 40px;
+    }
+
+    &__tabs{
+        border-bottom-width: 2px;
+        margin-bottom: 50px;
+
+        .nav-link{
+            border: none;
+            color: #000;
+            font: 400 30px $title;
+            text-transform: uppercase;
+            padding: 0 75px 15px;
+            position: relative;
+
+            &.active.nav-link{
+                color: #000;
+            }
+
+            &::after{
+                @include pos($b: -1px, $l: 50%);
+                @include size(0, 2px);
+                content: '';
+                background-color: #ced6af;
+                transition: all .3s;
+            }
+
+            &.active::after{
+                background-color: #000;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__posts{
+
+        &-item{
+            margin-bottom: 15px;
+
+        }
+    }
+
+    &__title{
+        font: 400 24px $title;
+        text-transform: uppercase;
+        margin: 40px 0 35px;
+        
+    }
+
+    &__info{
+        font: 300 18px/40px $title;
+        color: #778055;
+    }
+
+    &__img{
+        margin-top: 30px;
+    }
+}

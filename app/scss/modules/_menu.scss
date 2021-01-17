@@ -1,0 +1,47 @@
+.menu{
+    text-transform: uppercase;
+    color: #fff;
+    font: 400 16px $title;
+
+    &__item{
+        padding: 0 15px;
+    }
+
+    &__items{
+        padding: 0 30px;
+
+        ion-icon{
+            font-size: 20px;
+        }
+    }
+
+    &__link{
+        padding: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+
+        &:hover{
+            text-decoration: none;
+            color: #9db892;
+            
+        }
+
+        &::before{
+            @include pos($b: 50%, $l: 0);
+            @include size(100%, 2px);
+            content: '';
+            transition: all .3s;
+        }
+
+        &.active::before{
+            background-color: #9db892;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.logo{
+    font-size: 30px;
+}

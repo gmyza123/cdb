@@ -1,0 +1,39 @@
+.header{
+    background: url('../images/header.jpg') no-repeat bottom center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 1%;
+    color: #fff;
+    
+
+    &__title{
+        text-transform: uppercase;
+        margin: 25vh 0 35px;
+        font: 400 55px/75px $title;
+        letter-spacing: 15px;
+    }
+
+    &__info{
+        font: 300 24px $title;
+        letter-spacing: 8px;
+        margin-bottom: 60px;
+    }
+
+    &__arrow{
+        font: 300 18px $title;
+        margin-bottom: 100px;
+        letter-spacing: 8px;
+    }
+
+    .icon-arrow{
+        color: #fff;
+        text-decoration: none;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .icon-down{
+        color: #fff;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,20 @@
+.about{
+    padding-top: 100px;
+    
+    &__title{
+        font: 400 24px $title;
+        text-transform: uppercase;
+        @include pos(absolute, $r: 40%, $t: 17%);
+        
+    }
+
+    &__frame{
+        width: auto;
+    }
+
+    &__logo{
+        width: auto;
+        @include pos(absolute, $l: 0, $r: 0, $t: 49%);
+        margin: auto;
+    }
+}
