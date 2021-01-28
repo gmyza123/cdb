@@ -1,0 +1,30 @@
+.testimonials{
+    color: #fff;
+    
+    &__info{
+        @include pos($t: 10%, $z: 1);
+    }
+
+    &__text{
+        margin: 40px 20% 35px;
+        font: 300 22px/40px $title;
+        letter-spacing: 1px;
+    }
+
+    &__author{
+        font: 400 24px $title;
+        text-transform: uppercase;
+    }
+
+    .defis{
+        position: relative;
+
+        &::before{
+            @include size(45px, 2px);
+            @include pos($t: 50%, $l: -54px);
+            background-color: #fff;
+            content: '';
+        }
+    }
+    
+}

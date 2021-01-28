@@ -1,0 +1,109 @@
+.footer{
+    padding: 80px 0 60px;
+    color: #6e774a;
+    text-transform: uppercase;
+
+    &__title{
+        font: 400 60px $title; 
+    }
+
+    &__text{
+        margin-top: 80px;
+        font: 300 14px/33px $title;
+    }
+
+    &__line{
+        background-color: #6e774a;
+        margin-top: 50px;
+        height: 1px;
+        
+    }
+
+    &__href{
+        color: #6e774a; 
+        margin: 30px 15px 40px;
+    }
+
+    &__line-vert{
+        width: 50%;
+        height: 55px;
+        border-right: 2px solid #6e774a;
+    }
+
+    &__subs{
+        font: 400 18px $title;
+        color: #000;
+        margin-bottom: 30px;
+    }
+
+    &__button{
+        padding: 15px 30px;
+        border-left: 2px solid #ced6af;
+        background-color: #fff;
+        color: #6e774a;
+        outline: none;
+    }
+
+    &__copyright{
+        font: 300 11px $title;
+        margin-top: 60px;
+    }
+
+    &__field{
+        position: relative;
+        height: 55px;
+        color: #6e774a;
+        border: 2px solid #ced6af;
+        
+
+        input{
+            padding: 0 30px;
+            width: 100%;
+            color: #6e774a;
+            font: 400 16px $title;
+            letter-spacing: 2px;
+            
+
+            &::placeholder{
+                color: #6e774a;
+                transition: all .3s;
+                letter-spacing: 2px;
+            }
+
+            &:focus{
+                outline: none;
+
+                &::placeholder{
+                    color: transparent;
+                }
+
+                + label{
+                    @extend .label-up;
+                }
+            }
+        }
+
+        label{
+            @include pos($t: 10px, $l: 15px);
+            color: #cdcdcd;
+            transition: all .3s;
+            opacity: 0;
+            pointer-events: none;
+            padding: 0 5px;
+        }
+    }
+
+    &:not(:placeholder-shown){
+        +label{
+            @extend .label-up;
+        }
+    }
+}
+
+.label-up{
+    top: -11px;
+    opacity: 1;
+    color: #6e774a;
+    background-color: #fff;
+    font: 400 14px $title;
+}

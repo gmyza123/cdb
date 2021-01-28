@@ -3,6 +3,10 @@
 
     &__block{
         margin-bottom: 40px;
+
+        .nav-tabs{
+            border-color: #ced6af;
+        }   
     }
 
     &__tabs{
@@ -14,8 +18,9 @@
             color: #000;
             font: 400 30px $title;
             text-transform: uppercase;
-            padding: 0 75px 15px;
+            padding: 0 30px 15px;
             position: relative;
+            letter-spacing: 3px;
 
             &.active.nav-link{
                 color: #000;
@@ -49,6 +54,7 @@
         font: 400 24px $title;
         text-transform: uppercase;
         margin: 40px 0 35px;
+        letter-spacing: 2px;
         
     }
 
@@ -61,3 +67,4 @@
         margin-top: 30px;
     }
 }
+

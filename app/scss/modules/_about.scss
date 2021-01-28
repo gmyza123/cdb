@@ -4,17 +4,13 @@
     &__title{
         font: 400 24px $title;
         text-transform: uppercase;
-        @include pos(absolute, $r: 40%, $t: 17%);
-        
-    }
-
-    &__frame{
-        width: auto;
+        @include pos(absolute, $r: 0, $l: 0, $t: 17%);
+        margin: auto;       
     }
 
     &__logo{
-        width: auto;
         @include pos(absolute, $l: 0, $r: 0, $t: 49%);
+        padding: 0 10%;
         margin: auto;
     }
 }

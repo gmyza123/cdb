@@ -11,14 +11,13 @@ html {
 	scroll-behavior: smooth;
 }
 
-img{
-	width: 100%;
-	height: auto;
-}
-
 body, html {
 	min-height: 100%;
 	width: 100%;
+}
+
+img{
+	max-width: 100%;
 }
 
 // Main styles
